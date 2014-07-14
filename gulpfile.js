@@ -29,7 +29,7 @@ gulp.task('styles', ['clean'], function () {
   return gulp.src('./bower_components/bootstrap/less/bootstrap.less')
     .pipe(less({}))
     .pipe(gulp.dest('./public/css'))
-    .pipe($.livereload());
+    .pipe(livereload());
 });
 
 /**
